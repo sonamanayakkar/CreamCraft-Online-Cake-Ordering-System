@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nxthead {
+    background-color: black;
+}
+
+.logo {
+    width: 15%;
+}
+
+.logof {
+    width: 55%;
+}
+
+.nxthead a {
+    color: white;
+}
+
+
+
+.cartp {
+
+    padding: 0px 7vw 50px 7vw;
+    /* border:  black solid; */
+
+    margin-bottom: 80px;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.cartfooter {
+    border-radius: 0px;
+    /* border:  black solid; */
+}
+
+.cartp .hed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.cartp .hed h1 {
+    font-size: 3vw;
+}
+
+.cartp .hed .hs {
+    padding: 10px;
+
+
+    /* border: black solid; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.hs1 {
+    padding: 0 7px;
+    border-right: 1px solid;
+    font-size: 20px;
+}
+
+.hs2 {
+
+    padding: 0 7px;
+    font-size: 20px;
+}
+
+.body {
+    margin-top: 20px;
+    /* border: black solid; */
+
+    height: 75vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.body .ll-list {
+    /* border: black solid; */
+    overflow: auto;
+}
+
+.body .b_bill {
+    backdrop-filter: blur(5px);
+    background-color: rgba(13, 13, 13, 0.819);
+    /* border: black solid; */
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+table {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    border-spacing: 0;
+    backdrop-filter: blur(5px);
+
+}
+
+tr {
+    border-bottom: 1px solid;
+}
+
+table th {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+
+}
+
+table td {
+    background-color: white;
+    background-color: rgba(13, 13, 13, 0.492);
+
+    border-bottom: 2px solid;
+    border: none;
+}
+
+.cartp table thead {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.cartp table tr .col1 {
+    display: flex;
+    align-items: center;
+}
+
+.cartp table tr .col2 {}
+
+.cartp table td .img {
+    width: 150px;
+    height: 110px;
+}
+
+.cartp table thead tr th {
+    padding: 20px;
+}
+
+.cartp table td .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cartp table tr td {
+    padding: 20px;
+
+}
+
+.cartp table tr td span {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.cartp table tr td .delbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(232, 232, 232);
+    padding: 15px;
+    border-radius: 50%;
+
+}
+
+.cartp table tr td .delbox i {
+    font-size: 15px;
+}
+
+.body .b_bill .z {}
+
+
+.body .b_bill .dcode {
+    font-size: 1.3vw;
+    color: white;
+}
+
+
+.body .b_bill .couponcode {
+    position: relative;
+}
+
+.body .b_bill .couponcode input {
+    padding: 2px 50px;
+    width: 70%;
+    height: 6vh;
+    border: 1px solid;
+}
+
+.body .b_bill .couponcode input:focus {
+    outline: none;
+}
+
+.body .b_bill .couponcode .apply {
+    width: 30%;
+    height: 6vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.carttotal {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fdf3ea;
+}
+
+.carttotal .u {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.carttotal .u .one {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.carttotal button {
+    height: 6vh;
+    color: white;
+    background-color: black;
+}
+
+
+
+@media screen and (min-width:601px) and (max-width:770px) {
+
+
+    .body {
+        margin-top: 20px;
+        /* border: black solid; */
+        height: 118vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* justify-content: space-between; */
+    }
+
+    .body .b_bill {
+        backdrop-filter: blur(5px);
+        background-color: rgba(13, 13, 13, 0.819);
+        /* border: black solid; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+    }
+
+
+    .body .b_bill .dcode {
+        font-size: 3.3vw;
+        color: white;
+    }
+
+
+
+
+
+}
+
+
+@media screen and (max-width:600px) {
+
+
+    .cartp .hed h1 {
+        font-size: 22px;
+    }
+
+
+    .hs1,
+    .hs2 {
+        padding: 0 7px;
+        border-right: 1px solid;
+        font-size: 18px;
+    }
+
+
+
+    .body {
+        margin-top: 20px;
+        /* border: black solid; */
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+
+    }
+
+    .ll-list {
+        height: 60vh;
+    }
+
+    .cartp {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .delbox {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .body .b_bill {
+        backdrop-filter: blur(5px);
+        background-color: rgba(13, 13, 13, 0.819);
+        /* border: black solid; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+    }
+
+
+    .body .b_bill .dcode {
+        font-size: 20px;
+        color: white;
+    }
+
+
+
+    .cartfooter {
+        margin-top: 100px;
+    }
+
+
+
+
+}

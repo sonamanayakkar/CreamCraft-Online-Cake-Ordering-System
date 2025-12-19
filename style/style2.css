@@ -1,0 +1,554 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   position: relative;
+}
+
+.nxthead {
+   background-color: black;
+}
+
+.nxthead a {
+   color: white;
+}
+
+
+
+header {
+
+   width: 100%;
+
+   /* z-index: 1; */
+
+}
+
+.logo {
+   width: 15%;
+}
+
+.logof {
+   width: 55%;
+}
+
+
+.container4 {
+   z-index: -1;
+   /* border: black solid; */
+}
+
+
+.first {
+
+
+   width: 100%;
+
+   padding: 0 5vw;
+   z-index: 1;
+   background-color: rgb(255, 255, 255);
+}
+
+.ff {
+   background-color: black;
+
+
+}
+
+
+
+
+.section4 .first {
+   position: sticky;
+   top: 75px;
+
+}
+
+
+
+
+.container4 .second .types .name h2,
+h3 {
+   color: black;
+
+
+}
+
+.heading {}
+
+.heading .title {
+
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+.heading .title .box1 {
+   font-size: 3vw;
+
+}
+
+.heading .title .box2 {
+   display: flex;
+}
+
+.heading .title .box2 .h {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0px 10px;
+}
+
+.heading .title .box2 .h a {
+   color: black;
+}
+
+.heading .title .box2 .h1 {
+   border-right: 1px rgb(118, 118, 118) solid;
+}
+
+.heading .search {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   /* border: black solid; */
+}
+
+.heading .search .fa-s {
+
+   display: flex;
+   align-items: center;
+
+   justify-content: start;
+   border: 1px rgb(118, 118, 118) solid;
+   padding: 5px;
+   width: 800px;
+
+}
+
+.heading .search .fa-s .cat {
+   flex-grow: .2;
+   padding: 0 10px;
+   border-right: 1px rgb(118, 118, 118) solid;
+}
+
+.heading .search .fa-s .cat select {
+   width: 100%;
+   padding: 10px;
+   border: none;
+   background-color: black;
+   color: white;
+}
+
+.heading .search .fa-s .ser {
+   display: flex;
+   flex-grow: 2;
+   /* border: red solid; */
+   position: relative;
+
+}
+
+.heading .search .fa-s .ser input {
+   border: none;
+   width: 100%;
+   height: 5vh;
+   padding: 0px 40px;
+   background-color: black;
+   color: white;
+}
+
+.heading .search .fa-s .ser input:focus {
+   outline: none;
+}
+
+.heading .search .fa-s .ser .s-icon {
+   position: absolute;
+   right: 10px;
+   top: 10px;
+}
+
+.heading .search .fa-sort {}
+
+.heading .search .fa-sort select {
+
+   padding: 15px;
+   background-color: #000000;
+   color: white;
+}
+
+
+.container4 .c-name {
+
+   border: black solid;
+   text-align: center;
+   font-size: 3vw;
+}
+
+
+
+
+
+
+
+/*---------------cart--------------*/
+
+
+.cc-cart {
+   padding: 0;
+   position: absolute;
+   position: fixed;
+   top: 0;
+   right: 0;
+   height: 100vh;
+   width: 100%;
+   z-index: 30000;
+   background-color: rgba(0, 0, 0, 0.551);
+   display: flex;
+   justify-content: flex-end;
+   display: none;
+}
+
+.cc-cart .cross {
+   /* border: black solid; */
+   width: 51px;
+   height: 60px;
+   align-self: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 30px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 10px 0px 0px 10px;
+}
+
+.cc-cart .small-box {
+   /* border: black solid; */
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(255, 255, 255);
+   width: 30%;
+   height: 100%;
+
+   padding: 20px;
+}
+
+.cc-cart .small-box .if {}
+
+.cc-cart .small-box .items {
+   height: 60%;
+}
+
+.cc-cart .small-box .items .hed-er {
+   border-bottom: 2px solid black;
+   padding: 10px 0;
+   margin-bottom: 10px;
+}
+
+.cc-cart .small-box .items .hed-er .left {
+   font-size: 2vw;
+}
+
+
+
+.cc-cart .small-box .items .li-st {
+
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   overflow: hidden;
+   overflow: auto;
+   /* border: green solid; */
+   height: 52vh;
+}
+
+
+.cc-cart .small-box .items .li-st .pro-duct {
+   box-shadow: 0px 0px 5px 1px black;
+   height: 20vh;
+   padding: 10px;
+   padding-right: 10px;
+   background-color: rgb(0, 0, 0);
+}
+
+.cc-cart .pic {
+   display: flex;
+   gap: 10px;
+   height: 100%;
+
+}
+
+.cc-cart .pic .img {
+   height: 100%;
+   width: 150px;
+}
+
+.cc-cart .pic img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.cc-cart .div {
+   position: relative;
+   width: 100%;
+   /* border: blue solid; */
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+
+
+}
+
+.cc-cart .div h4 {
+   font-size: 1.2vw;
+   font-weight: 400;
+   color: white;
+}
+
+.cc-cart .div i {
+   position: absolute;
+   right: 10px;
+   top: 5px;
+   font-size: 1.2vw;
+   cursor: pointer;
+   color: white;
+}
+
+.cc-cart span,
+h4,
+del {
+   font-size: 16px;
+   color: white;
+}
+
+.cc-cart .div .cost {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* border:  red solid; */
+}
+
+.cc-cart .div .cost .count {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   border: 1px solid rgb(255, 255, 255);
+   padding: 0 5px;
+   width: 30%;
+}
+
+.cc-cart .div .cost .count h3,
+h2 {
+   color: white;
+}
+
+.cc-cart .div .cost .tot-al {
+   /* border: black solid; */
+   font-size: 1.5vw;
+   color: white;
+}
+
+
+.fshop {
+   margin-top: 70px;
+}
+
+.foo-ter {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 10px 0px;
+   border-top: 2px gray solid;
+   height: 60%;
+}
+
+.foo-ter .et {
+   display: flex;
+   justify-content: space-between;
+}
+
+.foo-ter button {
+   height: 5vh;
+   background-color: black;
+   border: none;
+   width: 70%;
+   align-self: center;
+
+}
+
+.foo-ter button a {
+   color: white;
+}
+
+.foo-ter h2 {
+   color: black;
+   text-align: center;
+   font-size: 2vwpx;
+   font-weight: 400;
+}
+
+.foo-ter .et span {
+   color: black;
+   font-size: 2vw;
+}
+
+
+
+@media screen and (min-width:601px) and (max-width:770px) {
+
+
+   .cc-cart .small-box {
+      /* border: black solid; */
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(255, 255, 255);
+      width: 60%;
+      height: 100%;
+      padding: 20px;
+   }
+
+
+
+
+
+}
+
+
+@media screen and (max-width:600px) {
+
+
+
+   .heading .title .box1 {
+      font-size: 30px;
+   }
+
+   .heading .title .box2 .h a {
+      color: black;
+      font-size: 14px;
+   }
+
+
+   .heading .search {
+      width: 100%;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      /* border: black solid; */
+   }
+
+   .heading .search .fa-s {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      border: 1px rgb(118, 118, 118) solid;
+      padding: 5px;
+      width: 100%;
+      /* height: 4vh; */
+   }
+
+   .f {
+      position: sticky;
+      top: 64px;
+   }
+
+   .heading .search .fa-s .cat select {
+      width: 100%;
+      padding: 5px;
+      border: none;
+   }
+
+   .heading .search .fa-sort select {
+      padding: 10px;
+      /* background-color: #f5f5f5; */
+   }
+
+   .heading .search .fa-s .ser input {
+      border: none;
+      width: 100%;
+      height: 3vh;
+      padding: 0px 40px;
+   }
+
+   .heading .search .fa-s .ser .s-icon {
+      position: absolute;
+      right: 10px;
+      top: 3px;
+   }
+
+
+   .section4 .first {
+      position: static;
+
+      z-index: 0;
+   }
+
+
+
+
+   /*--------------cart----------------*/
+
+
+   .cc-cart .small-box {
+      /* border: black solid; */
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+   }
+
+   .cc-cart .div h4 {
+      font-size: 4.7vw;
+      font-weight: 400;
+      color: white;
+   }
+
+   .cc-cart .div i {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      font-size: 4.8vw;
+      cursor: pointer;
+      color: white;
+   }
+
+   .cc-cart .div .cost .tot-al {
+      /* border: black solid; */
+      font-size: 20px;
+      color: white;
+   }
+
+
+   .cc-cart .div .cost .count {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: 1px solid rgb(255, 255, 255);
+      padding: 0 5px;
+      width: 58%;
+   }
+
+   .foo-ter .et span {
+      color: black;
+      font-size: 30px;
+   }
+
+   .cc-cart .small-box .items .hed-er .left {
+      font-size: 30px;
+   }
+
+
+
+
+
+
+}

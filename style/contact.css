@@ -254,13 +254,11 @@ iframe {
 
 .contactus .pic .box2 {
     height: 40vh;
-    width: 80%;
-
+    width: 100%;
     animation: cakec ease-out;
     transform: translateX(0%);
     animation-timeline: view();
     animation-range: entry 0% 50vh;
-
 }
 
 @keyframes cakec {
@@ -450,8 +448,10 @@ iframe {
     }
 
 
-    .container2 .box .four .ad-res {
+       .container2 .box .four .ad-res {
         font-size: 4vw;
+        display: flex;
+        align-items: center;
     }
 
     .container2 .box .san {

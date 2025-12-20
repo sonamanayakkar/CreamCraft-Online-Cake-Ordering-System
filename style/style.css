@@ -1230,7 +1230,7 @@ nav ul li a:hover {
     background-size: cover;
     /* border: black solid; */
     display: flex;
-    box-shadow: 0px 0px 6px 1px black;
+    box-shadow: 0px 0px 2px 1px black;
     justify-content: center;
     align-items: center;
     padding: 50px 5vw;
@@ -3220,14 +3220,25 @@ footer {
 
     }
 
-    .section3 .container3 {
+        .section3 .container3 {
         display: flex;
         flex-direction: column;
+        align-items: center;
         /* justify-content: space-between; */
         gap: 8px;
-
         width: 100%;
     }
+
+    .section3 .container3 .four {
+    display: flex;
+   
+    align-items: center;
+    /* flex-grow: 1; */
+    gap: 7%;
+    height: 15vh;
+    width: 300px;
+    /* border: black solid; */
+}
 
     section {
         position: relative;
@@ -3458,15 +3469,15 @@ footer {
         align-items: center;
     }
 
-    .container6 .contactus .contact form button {
+       .container6 .contactus .contact form button {
         cursor: pointer;
         width: 100%;
         height: 4vh;
         color: white;
-        /* background-color: rgb(219 255 0 / 70%); */
-        background: linear-gradient(45deg, transparent, #ff0049);
+       
         border-radius: 5px;
         border: none;
+        font-size: 3vw;
     }
 
     label {
@@ -3571,6 +3582,7 @@ footer {
     .footer .upper {
         /* height: 50vh; */
         display: flex;
+        align-items: center;
         flex-direction: column;
         gap: 0px;
         padding: 0px;
@@ -3599,8 +3611,8 @@ footer {
         color: white;
     }
 
-    .footer .three .ser {
-        width: 80%;
+        .footer .three .ser {
+        width: 100%;
         position: relative;
         display: flex;
         align-items: center;

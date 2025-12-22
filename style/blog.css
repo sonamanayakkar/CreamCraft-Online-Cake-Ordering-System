@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Bungee+Outline&family=Fugaz+One&family=Kavoon&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Russo+One&display=swap');
+
+
+:root {
+    --upper-case: uppercase;
+    --capitalize-case: capitalize;
+    --button-color: rgb(12, 11, 11);
+    --red--color: rgb(255, 0, 85);
+    --orange-color: #e88f2a;
+    --chocolate-color: #19161e;
+    --black--color: #202124;
+    --gray-color: rgb(93, 93, 93);
+    --yellow-color: #fff3e8;
+
+    --poppins-Text: "Poppins", sans-serif;
+
+
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nxthead {
+    background-color: black;
+}
+
+.logo {
+    width: 15%;
+}
+
+.logof {
+    width: 55%;
+}
+
+.nxthead a {
+    color: white;
+}
+
+
+
+/*-----------section--------------*/
+
+
+.Blo-g {
+    padding: 50px 8vw;
+}
+
+.container .heading {
+    padding: 50px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .heading h1 {
+    font-size: 3rem;
+}
+
+.container .heading .two {
+    display: flex;
+}
+
+.container .heading .two .h1 {
+    font-size: 1.3rem;
+    padding: 0 10px;
+    border-right: 1px solid;
+}
+
+.container .heading .two .h2 {
+    padding: 0 10px;
+    font-size: 1.3rem;
+}
+
+
+.container .blog {
+    display: flex;
+}
+
+.container .blog .l {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 0 0 60%;
+    /* border: black solid; */
+}
+
+.container .blog .r {
+    flex: 0 0 40%;
+    /* border: black solid; */
+}
+
+.container .blog .l .img {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+
+}
+
+.container .blog .l .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .blog .l .img .des {
+    position: absolute;
+    width: 95%;
+    bottom: -12%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 30px 0;
+    gap: 20px;
+}
+
+.container .blog .l .img .des button {
+    background-color: var(--orange-color);
+    color: white;
+    height: 5vh;
+    width: 100px;
+    border: none;
+}
+
+.container .blog .l .img .des .j {
+    display: flex;
+}
+
+.container .blog .l .img .des .j .three {
+    padding: 0 10px;
+    border-right: 1px solid;
+}
+
+.container .blog .l .img .des .j .three3 {
+    padding: 0 10px;
+
+}
+
+.container .blog .l .lists {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container .blog .l .lists .description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .blog .l .lists .description h1 {
+    font-size: 3rem;
+}
+
+.container .blog .l .lists .description a {
+    padding: 5px 0;
+    font-size: 1.5rem;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px rgb(255, 132, 0) solid;
+}
+
+
+
+/*-----------right side--------------*/
+
+.container .blog .r {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container .blog .r .input {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container .blog .r .input input {
+    height: 6vh;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.container .blog .r .input i {
+    position: absolute;
+    right: 10px;
+}
+
+
+.container .blog .r .followme {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container .blog .r .head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .blog .r .head h3 {
+    font-size: 1.5rem;
+}
+
+.container .blog .r .bullet {
+    background-color: orange;
+    width: 20px;
+    height: 20px;
+}
+
+.container .blog .r .followme .four {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .blog .r .followme .four .f {
+    padding: 15px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 50%;
+    transition: .4s linear;
+    cursor: pointer;
+}
+
+.container .blog .r .followme .four .f:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.container .blog .popular {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container .blog .popular .posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .blog .popular .posts .list {
+    display: flex;
+    gap: 20px;
+
+}
+
+.container .blog .popular .posts .list .img {
+    width: 100px;
+    height: 100px;
+
+}
+
+.container .blog .popular .posts .list .img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.container .blog .popular .posts .list .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container .blog .popular .posts .list .right h4 {
+    color: black;
+    font-size: 1.3rem;
+}
+
+
+.container .blog .Categories {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .blog .Categories .f {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+
+}
+
+.container .blog .Categories .f .five {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.container .blog .Categories .f .five h5 {
+    font-size: 1.2rem;
+}
+
+
+.container .blog .newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .blog .newsletter input {
+    height: 6vh;
+    padding: 0 20px;
+}
+
+.container .blog .newsletter button {
+    height: 6vh;
+    width: 40%;
+    color: white;
+    background-color: var(--button-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.container .blog .newsletter .tik {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container .blog .newsletter .tik input {
+    width: 20px;
+
+}
+
+.container .blog .newsletter .tik span {
+    font-size: 20px;
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .filter .menulist {
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        outline-offset: 5px;
+        box-shadow: none;
+        padding: 17px;
+        display: none;
+    }
+
+
+
+
+
+    .filter .menulist a {
+        color: #000000;
+        font-size: 16px;
+    }
+
+
+    .filter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        backdrop-filter: blur(5px);
+        height: fit-content;
+
+    }
+
+    .filter i {
+        display: flex;
+    }
+
+    .filter .fa-angle-up {
+        color: rgb(255, 255, 255);
+        position: absolute;
+        bottom: 0;
+        left: 45%;
+        font-size: 25px;
+        width: fit-content;
+        height: fit-content;
+        display: none;
+
+
+    }
+
+    .container {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .blog {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container .heading {
+        padding: 25px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container .blog .l .img .des {
+        position: absolute;
+        width: 95%;
+        bottom: -12%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        padding: 30px 0;
+        gap: 20px;
+    }
+
+    .container .blog .l .img .des .j .three {
+        padding: 0 10px;
+        border-right: 1px solid;
+        font-size: 3vw;
+    }
+
+    .container .blog .l .img .des .j .three3 {
+        padding: 0 10px;
+        border-right: 1px solid;
+        font-size: 3vw;
+    }
+
+    /*-------------------rhs------------------*/
+
+    .container .blog .r {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+
+
+
+
+    /* .filter input:checked~.menulist{
+        display: none;
+    }
+
+     .filter input:checked .fa-angle-up{
+        display: none;
+     } */
+
+
+
+
+
+    .footer-for-category {
+        margin-top: 100px;
+    }
+
+
+
+}

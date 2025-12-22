@@ -45,17 +45,14 @@ header {
 
 
    width: 100%;
+   padding: 50px 8vw;
 
-   
-   z-index: 1;
+
    background-color: rgb(255, 255, 255);
+   
 }
 
-.ff {
-   background-color: black;
 
-
-}
 
 
 
@@ -76,7 +73,11 @@ h3 {
 
 }
 
-.heading {}
+.first .heading {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
 
 .heading .title {
 
@@ -142,8 +143,7 @@ h3 {
    width: 100%;
    padding: 10px;
    border: none;
-   background-color: black;
-   color: white;
+
 }
 
 .heading .search .fa-s .ser {
@@ -159,8 +159,8 @@ h3 {
    width: 100%;
    height: 5vh;
    padding: 0px 40px;
-   background-color: black;
-   color: white;
+
+
 }
 
 .heading .search .fa-s .ser input:focus {
@@ -178,8 +178,8 @@ h3 {
 .heading .search .fa-sort select {
 
    padding: 15px;
-   background-color: #000000;
-   color: white;
+
+
 }
 
 
@@ -188,6 +188,42 @@ h3 {
    border: black solid;
    text-align: center;
    font-size: 3vw;
+}
+
+
+/*-----------nxt page -------------*/
+
+.nxtpage .results {
+ 
+   display: flex;
+   justify-content: space-between;
+}
+
+.nxtpage .results .l {
+   display: flex;
+
+}
+
+.nxtpage .results .l .four {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   font-size: 20px;
+   transition: .3s ease;
+   border-radius: 50%;
+
+}
+
+.nxtpage .results .l .four:hover {
+   background-color: black;
+   color: white;
+
+}
+
+.nxtpage .results .r{
+   font-size: 20px;
 }
 
 
@@ -489,6 +525,14 @@ h2 {
 
       z-index: 0;
    }
+
+   .nxtpage .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
 
 
 

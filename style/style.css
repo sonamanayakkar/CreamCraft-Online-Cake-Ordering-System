@@ -16,7 +16,7 @@ html {
     --black--color: #202124;
     --gray-color: rgb(93, 93, 93);
     --yellow-color: #fff3e8;
-
+    
     --poppins-Text: "Poppins", sans-serif;
 
 
@@ -78,7 +78,7 @@ section {
     background: url(../images/landing-page/close-up-chocolate-dessert-with-sugar-powder.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     /* display: flex;
     justify-content: space-between; */
 
@@ -140,6 +140,7 @@ section {
 
 .header3 a {
     color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 
@@ -214,14 +215,44 @@ nav ul {
     justify-content: space-between;
 }
 
+nav ul .pa {
+    position: relative;
+}
+
+nav ul .pa:hover .pages {
+    display: flex;
+}
+
+nav ul li .pages {
+    position: absolute;
+    transition: .3s ease-out;
+    padding: 20px;
+    top: 100%;
+    left: 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    z-index: 5000;
+}
+
+nav ul li .pages li a {
+    color: black;
+}
+
 nav ul li {
     list-style: none;
     transition: linear;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 10px;
     position: relative;
 
 }
+
+
 
 nav ul li::before {
     content: "";
@@ -300,6 +331,11 @@ nav ul li a:hover {
 .cart .tr1 {}
 
 .cart .tr2 {
+    border-right: 2px solid white;
+    transition: .2s linear;
+}
+
+.cart .tr3 {
     border-right: 2px solid white;
     transition: .2s linear;
 }
@@ -442,6 +478,7 @@ nav ul li a:hover {
 
 
     animation: cake1 10s ease-out infinite;
+
 
 }
 
@@ -651,6 +688,7 @@ nav ul li a:hover {
     color: white;
     font-weight: 600;
     border: none;
+     font-family: var(--poppins-Text);
 }
 
 
@@ -667,7 +705,7 @@ nav ul li a:hover {
     color: #000000;
     font-size: 19px;
     border: none;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--poppins-Text);
     cursor: pointer;
 }
 
@@ -853,20 +891,30 @@ nav ul li a:hover {
 }
 
 
+
 /*----------------------section2-------------*/
 
 
 .section2 {
-    padding-top: 60px;
+    padding: 60px 8vw;
+    /* background: url(../images/bg/realistic-dripping-chocolate-texture-vector-border.png) no-repeat;
+  background-position: top ;
+  background-size: cover; */
+
 }
 
 .container2 {
-    border-bottom: 1px solid orangered;
 
+    
 }
 
 .container2 .aboutus {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 30px 0;
+
 
 
 }
@@ -883,7 +931,9 @@ nav ul li a:hover {
 
 .container2 .aboutus .range {
     gap: 40px;
-    
+    /* border: black solid; */
+    display: flex;
+
 }
 
 .container2 .aboutus .a h3 {
@@ -917,7 +967,8 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  
+    /* border: orange solid; */
+
 
 }
 
@@ -927,29 +978,30 @@ nav ul li a:hover {
 }
 
 .container2 .range .three .lv {
-   
+
     background-color: rgb(211, 211, 211);
     height: 1.2vh;
     width: 100%;
-  
+
 }
 
 .container2 .range .three .lv .level {
     background-color: black;
     width: 95%;
     height: 100%;
-  
-    animation: range linear;
+
+    /* animation: range linear; */
     animation-timeline: view();
     animation-range: entry 20% cover 40vh;
 }
 
 @keyframes range {
-    
-    from{
+
+    from {
         width: 0%;
     }
-    to{
+
+    to {
         width: 100%;
     }
 }
@@ -979,7 +1031,16 @@ nav ul li a:hover {
 
 .container2 .category {
 
+    margin-top: 20px;
     padding: 50px 0;
+
+}
+
+.container2 .category h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px 0;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -992,11 +1053,59 @@ nav ul li a:hover {
     height: 37vh;
     min-width: 233px;
     box-shadow: 0px 0px 5px 1px black;
-    border-radius: 0px 0px 30px 30px;
+    border-radius: 30px 0px 30px 0px;
     font-size: 36px;
     font-weight: 700;
     scroll-snap-align: center;
 }
+
+.slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    cursor: grab;
+    user-select: none;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.slider:active {
+    cursor: grabbing;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    cursor: grab;
+    user-select: none;
+    -webkit-overflow-scrolling: touch;
+    will-change: scroll-position;
+    /* smoother */
+}
+
+.slider.dragging {
+    cursor: grabbing;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+/*----------choco-------------*/
+
+
+
 
 
 
@@ -1016,80 +1125,49 @@ nav ul li a:hover {
 
 .section3 {
     padding: 50px 5vw 7vh 5vw;
+    /* background: url(../images/bg/about\ choco) no-repeat;
+    background-position: center;
+    background-size: contain; */
+    background-color: white;
 
 }
 
 .section3 .container3 {
     /* border: black solid; */
-
-    align-items: center;
-    justify-content: center;
-
-}
-
-.container3 .first {
-
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 3;
-
-}
-
-.heading .line {
-    /* width: 60%; */
-}
-
-.container3 .first .varity {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
-}
-
-.container3 .first .varity .outer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2b2825;
-    height: 13vh;
-    width: 30%;
     padding: 10px;
-
-}
-
-.container3 .first .varity .outer .inside {
-    border: 1px solid white;
-
-    display: flex;
+    /* background-color: gray; */
     align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
-
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.738);
+    box-shadow: 0px 0px 5px 1px #a7a7a7;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
 }
 
-.container3 .first .varity .outer .inside .s {
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    transition: .3s linear;
+.container3 h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
 }
 
-.container3 .first .varity .outer .inside .s:hover {
-    background-color: #e88f2a;
+.container3 h1 span {
+    color: red;
 }
+
+
 
 
 .container3 .second {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 40px;
     flex-wrap: wrap;
+
+    padding: 20px;
+
+
 
 
 
@@ -1102,8 +1180,8 @@ nav ul li a:hover {
 .container3 .second .types {
     position: relative;
     overflow: hidden;
-
-
+    box-shadow: 0px 0px 10px 1px rgb(171, 171, 171);
+    border-radius: 10px;
     height: 50vh;
     display: flex;
     width: 270px;
@@ -1226,17 +1304,17 @@ nav ul li a:hover {
 }
 
 .container3 .second .types .name .flavour {
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: rgb(255, 255, 255);
     position: absolute;
-
     top: -15%;
     left: 50%;
     transform: translate(-50%, 5%);
-    padding: 7px;
-
+    padding: 7px 15px;
     width: fit-content;
     transition: .3s linear;
+      font-family: "Poppins", sans-serif;
+      color: rgb(106, 106, 106);
 }
 
 .container3 .second .types .name h2 {
@@ -1271,7 +1349,7 @@ nav ul li a:hover {
 
 .section5 {
 
-    padding: 50px 5vw;
+    padding: 0 5vw 50px 5vw;
 }
 
 .container5 {
@@ -1290,7 +1368,7 @@ nav ul li a:hover {
 
 .container5 .team .first {
     height: 100%;
-
+    padding: 0 5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1301,16 +1379,40 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: relative;
     width: 10%;
     height: 6vh;
     border: 1.5px gray solid;
+  
+    overflow: hidden;
+
+}
 
 
+
+.container5 .team .second::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+      transition: .2s linear;
+      z-index: -1;
+    
+}
+.container5 .team .second:hover::before{
+    transform: translateY(-100%) ;
+    transform-origin: right;
+}
+
+.container5 .team .second:hover a{
+    color: black;
 }
 
 .container5 .team .second a {
     color: var(--black--color);
+    color: white;
     font-size: 16px;
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
@@ -1344,7 +1446,7 @@ nav ul li a:hover {
 
 @keyframes members {
     from {
-        transform: translateY(100px) scale(.3);
+        transform: translateY(600px) scale(.3);
         opacity: 0;
 
     }
@@ -1359,7 +1461,7 @@ nav ul li a:hover {
     height: 50vh;
     animation: members linear;
     animation-timeline: view();
-    animation-range: entry 10% cover 70vh;
+    animation-range: entry 10% cover 50vh;
 
 }
 
@@ -1444,7 +1546,8 @@ nav ul li a:hover {
 }
 
 .section6 .container6 .two input:focus {
-    outline: none;
+    outline: 2px rgb(193, 234, 255) solid;
+
 }
 
 .section6 .container6 .two button {
@@ -1483,7 +1586,7 @@ nav ul li a:hover {
 
 .section7 {
     padding: 90px 8vw;
-    background-color: var(--yellow-color);
+    background-color: #000000;
 }
 
 
@@ -1499,7 +1602,7 @@ nav ul li a:hover {
 
 .container7 .Testimonial h1 {
     font-size: 3rem;
-    color: var(--button-color);
+    color: #ffffff;
 }
 
 
@@ -1690,6 +1793,8 @@ nav ul li a:hover {
     width: 270px;
     height: 300px;
     /* border: black solid; */
+    overflow: hidden;
+
 }
 
 .container8 .gallery .g62 {
@@ -1705,6 +1810,11 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: .4s ease;
+}
+
+.container8 .gallery .g6:hover img {
+    transform: rotate(-20deg) scale(1.5);
 }
 
 
@@ -1794,7 +1904,10 @@ nav ul li a:hover {
 }
 
 .footer .one .hours {
-    color: rgb(255, 0, 123);
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: rgb(255, 111, 0);
     animation: hours linear;
     animation-timeline: view();
     animation-range: entry 10% cover 50vh;
@@ -1819,6 +1932,7 @@ nav ul li a:hover {
 }
 
 .footer .days h3 {
+    font-size: 16px;
     color: rgb(255, 255, 255);
     animation: days linear;
     animation-timeline: view();
@@ -1861,6 +1975,7 @@ nav ul li a:hover {
 
 
 .footer .two p {
+    font-size: 16px;
     text-align: center;
     color: rgb(255, 255, 255);
 }
@@ -1882,7 +1997,12 @@ nav ul li a:hover {
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.301);
     border-radius: 50%;
+    transition: .2s ease;
 
+}
+
+.footer .icons .four:hover {
+    transform: translateY(-10px) scale(1.1);
 }
 
 .footer .icons .four a {
@@ -1891,7 +2011,9 @@ nav ul li a:hover {
 
 
 .footer .three .s {
-    font-size: 30px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
     text-align: start;
     color: rgb(255, 191, 0);
     animation: three linear;
@@ -1900,6 +2022,7 @@ nav ul li a:hover {
 }
 
 .footer .three .g p {
+    font-size: 16px;
     animation: three linear;
     animation-timeline: view();
     animation-range: entry 30% cover 10vh;
@@ -2006,12 +2129,11 @@ footer .end .r .b3 {
     /*-------------------------header-------------------*/
 
 
-    nav {
+        nav {
         position: relative;
-        width: 66%;
+        width: 50%;
         padding: 5px 0px;
     }
-
     nav ul li a {
         font-family: "Poppins", sans-serif;
         font-weight: 600;
@@ -2028,7 +2150,7 @@ footer .end .r .b3 {
 
     /*---------------------section 1-------------------*/
 
-    .cakepic {
+        .cakepic {
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -2036,10 +2158,11 @@ footer .end .r .b3 {
         border-radius: 50%;
         position: absolute;
         top: 69%;
+        left: 0;
         background-color: rgba(0, 0, 0, 0.34);
         backdrop-filter: blur(3px);
-        height: 568px;
-        width: 160%;
+        height: 617px;
+        width: 100%;
     }
 
 
@@ -2276,20 +2399,21 @@ footer .end .r .b3 {
         text-align: center;
         width: 100%;
     }
+
     .container1 .box1 .h1 {
-    overflow: hidden;
-    /* border-right: white solid; */
-    color: rgb(255 255 255);
-    /* font-family: "Kavoon", serif; */
-    font-family: "Poppins", sans-serif;
-    font-size: 5vw;
-    font-weight: 900;
-    text-transform: var(--upper-case);
-    animation: none;
-    border: none;
-    width: fit-content;
-  
-}
+        overflow: hidden;
+        /* border-right: white solid; */
+        color: rgb(255 255 255);
+        /* font-family: "Kavoon", serif; */
+        font-family: "Poppins", sans-serif;
+        font-size: 5vw;
+        font-weight: 900;
+        text-transform: var(--upper-case);
+        animation: none;
+        border: none;
+        width: fit-content;
+
+    }
 
 
 
@@ -2324,6 +2448,25 @@ footer .end .r .b3 {
     }
 
 
+
+    /*------------------section 3-----------------*/
+
+    .container3 .second .types .name h2 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*------------------section 2---------------------*/
+.container2 .aboutus {
+   display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 30px 0;
+}
+
+
     /*-----------------------section 5-------------------*/
 
 
@@ -2340,7 +2483,8 @@ footer .end .r .b3 {
     /*-------------------------container6-------------------*/
 
     .container6 {
-
+        display: flex;
+        flex-direction: column;
         padding: 30px;
     }
 
@@ -2368,6 +2512,13 @@ footer .end .r .b3 {
         height: 45vh;
     }
 
+    .section6 .container6 .two iframe {
+    position: static;
+    top: -120px;
+    height: 90vh;
+    width: 100%;
+}
+
 
 
     /*------------section7 ----------------*/
@@ -2377,6 +2528,13 @@ footer .end .r .b3 {
         justify-content: space-between;
         align-items: center;
     }
+
+    /*------------------------section 8----------------------*/
+
+    .container8 {
+    display: block;
+    gap: 20px;
+}
 
 
 
@@ -2457,6 +2615,16 @@ footer .end .r .b3 {
         border: none;
     }
 
+    footer .end {
+    padding: 15px 8vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+}
+
 
 
 }
@@ -2467,6 +2635,11 @@ footer .end .r .b3 {
 @media screen and (max-width:600px) {
 
 
+    .section1 .landingpage {
+        padding: 0px 5vw;
+        /* border: red solid; */
+        height: 53vh;
+    }
 
     p {
         display: block;
@@ -2559,7 +2732,7 @@ footer .end .r .b3 {
 
     nav {
         position: absolute;
-        top: -278%;
+        top: -300%;
         /* transform: translatey(-208px); */
         width: 100%;
         padding: 5px 0px;
@@ -2626,6 +2799,32 @@ footer .end .r .b3 {
         justify-content: space-between;
     }
 
+    nav ul .pa {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    nav ul li .pages li a {
+        color: #ffffff;
+    }
+
+    nav ul li .pages {
+        position: static;
+        transition: .3s ease-out;
+        padding: 20px;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgb(0, 0, 0);
+        display: none;
+    }
+
 
     .cart {
         display: flex;
@@ -2658,6 +2857,8 @@ footer .end .r .b3 {
         color: red;
     }
 
+
+    
 
 
 
@@ -2732,11 +2933,15 @@ footer .end .r .b3 {
     .section1 .landingpage .container1 {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        /* height: 46%; */
-        height: fit-content;
 
     }
+
+    .container1 .box1 p {
+    color: rgba(255, 255, 255, 0.623);
+    font-family: "Poppins", sans-serif;
+    /* visibility: hidden; */
+    display: none;
+}
 
 
     .container1 .box1 .s {
@@ -2748,30 +2953,30 @@ footer .end .r .b3 {
 
 
     .container1 .box1 .h1 {
-    overflow: hidden;
-    /* border-right: white solid; */
-    color: rgb(255 255 255);
-    /* font-family: "Kavoon", serif; */
-    font-family: "Poppins", sans-serif;
-    font-size: 14vw;
-    font-weight: 900;
-    text-transform: var(--upper-case);
-    animation:none;
-    border: none;
-    width: 100%;
-}
+        overflow: hidden;
+        /* border-right: white solid; */
+        color: rgb(255 255 255);
+        /* font-family: "Kavoon", serif; */
+        font-family: "Poppins", sans-serif;
+        font-size: 14vw;
+        font-weight: 900;
+        text-transform: var(--upper-case);
+        animation: none;
+        border: none;
+        width: 100%;
+    }
 
 
 
-    .container1 .box1 .cakesearch {
+        .container1 .box1 .cakesearch {
         position: relative;
         /* border: red solid; */
-        height: 6vh;
+        height: 8vh;
         display: flex;
         align-items: center;
     }
 
-        .container1 .box1 .explore button {
+    .container1 .box1 .explore button {
         height: 7vh;
         background-color: rgb(255 255 255);
         width: 63%;
@@ -2795,7 +3000,7 @@ footer .end .r .b3 {
         border-radius: 50%;
         position: absolute;
         top: 69%;
-      
+
         backdrop-filter: blur(3px);
         height: 568px;
         width: 160%;
@@ -3021,7 +3226,7 @@ footer .end .r .b3 {
         height: 36vh;
         min-width: 198px;
         box-shadow: 0px 0px 5px 1px black;
-        border-radius: 0px 0px 30px 30px;
+       
         font-size: 36px;
         font-weight: 700;
         scroll-snap-align: center;
@@ -3034,6 +3239,20 @@ footer .end .r .b3 {
 
     .container2 .aboutus .a h1 {
         font-size: 2.5rem;
+    }
+
+    .container2 .aboutus .range {
+        gap: 40px;
+        /* border: black solid; */
+        display: flex;
+        width: 100%;
+    }
+
+    .container2 .category h1 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 20px 0;
+        font-family: "Poppins", sans-serif;
     }
 
 
@@ -3200,9 +3419,10 @@ footer .end .r .b3 {
 
     /*--------------section 3-----------------*/
 
-   .section3 {
+    .section3 {
         padding: 50px 5vw 7vh 5vw;
     }
+
     .container3 .second .types .name h2 {
         text-align: center;
         font-size: 4.2vw;
@@ -3234,6 +3454,13 @@ footer .end .r .b3 {
         animation: cart linear;
         animation-timeline: view();
         animation-range: entry 1% cover 50vh;
+    }
+
+    .container3 h1 {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 2rem;
+        font-family: "Poppins", sans-serif;
     }
 
 
@@ -3372,23 +3599,28 @@ footer .end .r .b3 {
         border: 1.5px gray solid;
     }
 
-    .container5 .team .first h2 {
-        font-size: 6vw;
+        .container5 .team .first h2 {
+        font-size: 5vw;
+        text-align: center;
         color: var(--black--color);
     }
 
 
 
     .container5 .team .first h4 {
-        font-size: 8vw;
+        font-size: 2rem;
         color: var(--orange-color);
     }
 
+
+
     .container5 .team {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         padding: 15px;
+        gap: 20px;
     }
 
 
@@ -3431,6 +3663,15 @@ footer .end .r .b3 {
         align-items: center;
         gap: 20px;
     }
+    .container7 .scroll .review {
+    flex: 0 0 22%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    padding: 30px;
+}
 
 
 

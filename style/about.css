@@ -54,20 +54,23 @@
     align-items: center;
 }
 .aboutpage .heading  h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
+      font-family: "Poppins", sans-serif;
 }
 
 .aboutpage .heading .two{
     display: flex;
 }
 .aboutpage .heading .two .h1{
-    font-size: 1.3rem;
+    font-size: 1rem;
    padding: 0 10px ;
    border-right: 1px solid;
+     font-family: "Poppins", sans-serif;
 }
 .aboutpage .heading .two .h2{
    padding: 0 10px;
-    font-size: 1.3rem;
+    font-size: 1rem;
+      font-family: "Poppins", sans-serif;
 }
 
 

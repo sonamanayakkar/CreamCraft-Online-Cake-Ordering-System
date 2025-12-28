@@ -24,50 +24,46 @@ window.addEventListener('scroll', () => {
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
+const slider = document.querySelector('.slider');
+const btnLeft = document.querySelector('.nav.left');
+const btnRight = document.querySelector('.nav.right');
 
-    const slider = document.getElementById('slider');
-    const btnLeft = document.querySelector('.nav.left');
-    const btnRight = document.querySelector('.nav.right');
+let isDown = false;
+let startX;
+let scrollLeft;
 
-    let isDown = false;
-    let startX;
-    let scrollLeft;
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('dragging');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
 
-    slider.addEventListener('mousedown', (e) => {
-        isDown = true;
-        slider.classList.add('active');
-        startX = e.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
-    });
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('dragging');
+});
 
-    slider.addEventListener('mouseleave', () => {
-        isDown = false;
-        slider.classList.remove('active');
-    });
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('dragging');
+});
 
-    window.addEventListener('mouseup', () => {
-        isDown = false;
-        slider.classList.remove('active');
-    });
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 1.2; // multiplier for faster drag
+  slider.scrollLeft = scrollLeft - walk;
+});
 
-    slider.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - slider.offsetLeft;
-        slider.scrollLeft = scrollLeft - (x - startX);
-    });
+/* Buttons */
+btnLeft.addEventListener('click', () => {
+  slider.scrollBy({ left: -260, behavior: 'smooth' });
+});
 
-    const scrollAmount = 250;
-
-    btnLeft?.addEventListener('click', () => {
-        slider.scrollLeft -= scrollAmount;
-    });
-
-    btnRight?.addEventListener('click', () => {
-        slider.scrollLeft += scrollAmount;
-    });
-
+btnRight.addEventListener('click', () => {
+  slider.scrollBy({ left: 260, behavior: 'smooth' });
 });
 
 
@@ -80,7 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
 //----------------cart-------------------//
+
+
+
 
 
 

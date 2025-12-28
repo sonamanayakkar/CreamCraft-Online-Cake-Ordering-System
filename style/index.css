@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+
+
+
+:root {
+    --upper-case: uppercase;
+    --capitalize-case: capitalize;
+    --button-color: #111111;
+    --red--color: rgb(255, 0, 85);
+    --orange-color: #e88f2a;
+    --chocolate-color: #19161e;
+    --black--color: #202124;
+    --gray-color: rgb(93, 93, 93);
+    --yellow-color: #fff3e8;
+    
+    --poppins-Text: "Poppins", sans-serif;
+
+
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: "Orbitron", sans-serif; */
+}
+
+body {
+    height: 100vh;
+    /* border: black solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url(../images/bg/) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.container1 {
+
+    box-shadow: 0px 0px 10px 1px;
+    height: 80%;
+    width: 60%;
+    position: relative;
+    /* justify-content: end; */
+    overflow: hidden;
+
+
+}
+
+.login {
+
+    position: absolute;
+  
+
+    right: 0;
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(2, 162, 60); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--poppins-Text);
+}
+
+
+
+
+
+.fpassword {
+    display: flex;
+    justify-content: center;
+
+}
+
+a {
+
+    /* border: black solid; */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+.log {
+    /* background-color: purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    width: 80%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.56);
+}
+
+.username {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+label {
+    font-family: "Zain", sans-serif;
+    font-weight: 700;
+}
+
+
+.password {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    width: 70%;
+    height: 5vh;
+    border-radius: 10px;
+    padding: 0 50px 0 50px;
+    border: 2px solid gray;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 10%;
+}
+
+.btn a {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    font-size: larger;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: none;
+    font-family: var(--poppins-Text);
+}
+
+.centence .s {
+    font-size: medium;
+    text-align: center;
+    font-family: var(--poppins-Text);
+}
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.fa-solid {
+    position: absolute;
+
+    right: 20px;
+}
+
+
+.Registration {
+    /* border: yellow solid; */
+    position: absolute;
+
+    visibility: hidden;
+
+    right: 0;
+    height: 100%;
+    width: 50%;
+
+    width: 50%;
+    /* background-color: rgb(2, 162, 60); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.reg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    width: 80%;
+    padding: 1px;
+    background-color: rgba(255, 255, 255, 0.56);
+}
+
+.email {
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+/* toggle */
+
+.toggle {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    justify-content: center;
+    transition: 2s ease-in-out;
+    /* background-color: rgb(2, 162, 60); */
+}
+
+.hidden {
+    color: white;
+    text-shadow: 20px 10px 10px rgb(0, 0, 0);
+    font-family: var(--poppins-Text);
+
+}
+
+.toggle-right {
+    position: absolute;
+    right: -50%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+    align-items: center;
+    row-gap: 20px;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+
+
+
+
+
+.togglebox {
+    /* background-color: rgb(2, 162, 60); */
+    height: 100%;
+    width: 50%;
+
+}
+
+.togglebox::before {
+    content: "";
+    position: absolute;
+    box-shadow: 1px 1px 30px 10px;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 300%;
+    left: -250%;
+    border-radius: 150px;
+    transition: 1s ease-in-out;
+}
+
+
+/* LOGICS */
+
+
+
+.container1.active .togglebox::before {
+    left: 50%;
+    transition: 1s ease-in-out;
+}
+
+.container1.active .toggle {
+    left: -50%;
+    transition: 0.1s ease-in-out;
+}
+
+.container1.active .toggle-right {
+    right: 0;
+    transition: 1.5s ease-in-out;
+}
+
+.container1.active .Registration {
+    left: 0;
+    visibility: visible;
+    transition: 3s ease-in;
+
+}
+
+.container1.active .login {
+    left: 0;
+    display: none;
+    transition: 2s ease-in-out;
+}
+
+.btn1 {
+    border: rgb(255, 254, 254) solid;
+    width: 50%;
+    height: 10%;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.btn1::before {
+    content: "";
+    z-index: 10;
+    background-color: black;
+    position: absolute;
+    top: -5%;
+    left: 60%;
+    width: 40px;
+    height: 4px;
+    transition: 0.5s;
+
+}
+
+.btn1::after {
+    content: "";
+    z-index: 10;
+    background-color: black;
+    position: absolute;
+    bottom: -5%;
+    right: 60%;
+    width: 40px;
+    height: 4px;
+    transition: 0.5s;
+
+}
+
+.btn1:hover::before {
+    content: "";
+    z-index: 10;
+    background-color: black;
+    position: absolute;
+    top: -5%;
+    left: 2%;
+    width: 40px;
+    height: 4px;
+    transition: 0.5s;
+
+}
+
+.btn1:hover::after {
+    content: "";
+    z-index: 10;
+    background-color: black;
+    position: absolute;
+    bottom: -5%;
+    right: 2%;
+    width: 40px;
+    height: 4px;
+    transition: 0.5s;
+
+}
+
+.click {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:600px) {
+    .container1 {
+        box-shadow: 0px 0px 10px 4px;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        /* justify-content: end; */
+        overflow: hidden;
+    }
+
+    .login {
+        position: absolute;
+
+        background-position: center;
+        background-size: cover;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .Registration {
+        /* border: yellow solid; */
+        position: absolute;
+        visibility: hidden;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        width: 100%;
+        /* background-color: rgb(2, 162, 60); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: none;
+       
+    }
+
+    .toggle {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        justify-content: center;
+        transition: 2s ease-in-out;
+        /* background-color: rgb(2, 162, 60); */
+    }
+
+    .togglebox::before {
+        content: "";
+        position: absolute;
+        box-shadow: 1px 1px 30px 10px;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        height: 300%;
+        left: 0%;
+        top: -268%;
+        border-radius: 40px;
+        transition: 1s ease-in-out;
+    }
+
+    .log {
+        /* background-color: purple; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: fit-content;
+        width: 80%;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.56);
+    }
+
+    .btn {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        height: 5vh;
+    }
+
+    .toggle {
+        position: absolute;
+        left: 0;
+        top: 70px;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        /* display: none; */
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        justify-content: center;
+        transition: 2s ease-in-out;
+        /* background-color: rgb(2, 162, 60); */
+    }
+
+    .container1.active .togglebox::before {
+        top: 70%;
+        left: 0;
+        transition: 1s ease-in-out;
+    }
+
+
+
+
+
+    .btn1 {
+        border: rgb(255, 254, 254) solid;
+        width: 50%;
+        height: 5vh;
+        border-radius: 10px;
+        position: relative;
+    }
+  
+
+    .container1.active .toggle {
+        top: -50%;
+        left: 0;
+        transition: 0.1s ease-in-out;
+    }
+
+    .toggle-right {
+   
+    bottom: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+   
+    transition: 0.2s ease-in-out;
+}
+
+    .container1.active .toggle-right {
+        bottom: 50px;
+        transition: 1s ease-in-out;
+        height: fit-content;
+        width: 100%;
+    }
+
+    /*------registration-----------*/
+
+    .Registration {
+    left: 0;
+    visibility: visible;
+    transition: 1s ease-in;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    height: fit-content;
+    padding: 20px 0;
+    visibility: hidden;
+}
+.container1.active .Registration {
+    left: 0;
+       transition: 3s ease-in;
+    visibility: visible;
+ 
+
+}
+
+    .reg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+    gap: 10px;
+    width: 80%;
+    padding: 1px;
+    background-color: rgba(255, 255, 255, 0.56);
+}
+
+input {
+    width: 70%;
+    height: 5vh;
+    border-radius: 10px;
+    padding: 0 50px 0 50px;
+    border: 2px solid gray;
+}
+
+
+/*-----------fonts------------*/
+.hidden {
+    color: white;
+    text-shadow: 20px 10px 10px rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
+
+
+}

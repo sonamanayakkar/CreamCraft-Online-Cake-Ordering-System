@@ -1,3 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Bungee+Outline&family=Fugaz+One&family=Kavoon&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Russo+One&display=swap');
+
+
+
+
+:root {
+    --upper-case: uppercase;
+    --capitalize-case: capitalize;
+    --button-color: #111111;
+    --red--color: rgb(255, 0, 85);
+    --orange-color: #e88f2a;
+    --chocolate-color: #19161e;
+    --black--color: #202124;
+    --gray-color: rgb(93, 93, 93);
+    --yellow-color: #fff3e8;
+    
+    --poppins-Text: "Poppins", sans-serif;
+
+
+}
+
+
+
 * {
    margin: 0;
    padding: 0;
@@ -14,6 +38,7 @@ body {
 
 .nxthead a {
    color: white;
+   
 }
 
 
@@ -41,7 +66,7 @@ header {
 }
 
 
-.first {
+.ff {
 
 
    width: 100%;
@@ -50,6 +75,12 @@ header {
 
    background-color: rgb(255, 255, 255);
    
+}
+
+.section3{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
 }
 
 
@@ -90,6 +121,7 @@ h3 {
 
 .heading .title .box1 {
    font-size: 3vw;
+     font-family: "Poppins", sans-serif;
 
 }
 
@@ -106,6 +138,7 @@ h3 {
 
 .heading .title .box2 .h a {
    color: black;
+     font-family: "Poppins", sans-serif;
 }
 
 .heading .title .box2 .h1 {
@@ -143,6 +176,7 @@ h3 {
    width: 100%;
    padding: 10px;
    border: none;
+     font-family: "Poppins", sans-serif;
 
 }
 
@@ -178,6 +212,7 @@ h3 {
 .heading .search .fa-sort select {
 
    padding: 15px;
+     font-family: "Poppins", sans-serif;
 
 
 }
@@ -213,6 +248,7 @@ h3 {
    font-size: 20px;
    transition: .3s ease;
    border-radius: 50%;
+     font-family: "Poppins", sans-serif;
 
 }
 
@@ -224,6 +260,7 @@ h3 {
 
 .nxtpage .results .r{
    font-size: 20px;
+     font-family: "Poppins", sans-serif;
 }
 
 
@@ -288,6 +325,8 @@ h3 {
 
 .cc-cart .small-box .items .hed-er .left {
    font-size: 2vw;
+   font-family: var(--poppins-Text);
+   font-weight: 700;
 }
 
 
@@ -345,6 +384,7 @@ h3 {
    font-size: 1.2vw;
    font-weight: 400;
    color: white;
+    font-family: var(--poppins-Text);
 }
 
 .cc-cart .div i {
@@ -402,6 +442,7 @@ h2 {
    padding: 10px 0px;
    border-top: 2px gray solid;
    height: 60%;
+   font-family: var(--poppins-Text);
 }
 
 .foo-ter .et {
@@ -409,17 +450,20 @@ h2 {
    justify-content: space-between;
 }
 
-.foo-ter button {
+.foo-ter a button {
    height: 5vh;
    background-color: black;
    border: none;
-   width: 70%;
+   width: 100%;
    align-self: center;
+   color: white;
 
 }
 
-.foo-ter button a {
+.foo-ter  a {
+   align-self: center;
    color: white;
+   width: 70%;
 }
 
 .foo-ter h2 {
@@ -427,6 +471,7 @@ h2 {
    text-align: center;
    font-size: 2vwpx;
    font-weight: 400;
+   font-family: var(--poppins-Text);
 }
 
 .foo-ter .et span {
@@ -452,14 +497,61 @@ h2 {
 
 
 
+   /*----------cart----------------*/
+.cc-cart .div h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    font-family: var(--poppins-Text);
+}
+.cc-cart .div i {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+}
+.cc-cart span, h4, del {
+    font-size: 1.2rem;
+    color: white;
+}
+.cc-cart .div .cost .tot-al {
+    /* border: black solid; */
+    font-size: 1.2rem;
+    color: white;
+}
+    .location .container1 .scroller2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        bottom: -10px;
+        padding: 10px 0;
+        border-radius: 0 0 30px 30px;
+        height: 17vh;
+    }
+
+
+
 
 }
 
 
 @media screen and (max-width:600px) {
 
+.logo {
+    width: 40%;
+}
 
 
+   .heading .search .fa-s .cat {
+    flex-grow: 1;
+    padding: 0 10px;
+    border-right: 1px rgb(118, 118, 118) solid;
+    /* width: fit-content; */
+    width: 55%;
+}
    .heading .title .box1 {
       font-size: 30px;
    }
@@ -534,6 +626,11 @@ h2 {
     justify-content: space-between;
 }
 
+.nxtpage .results .r {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
 
 
 
@@ -550,11 +647,12 @@ h2 {
       padding: 20px;
    }
 
-   .cc-cart .div h4 {
-      font-size: 4.7vw;
-      font-weight: 400;
-      color: white;
-   }
+      .cc-cart .div h4 {
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+        text-align: start;
+    }
 
    .cc-cart .div i {
       position: absolute;
@@ -581,10 +679,10 @@ h2 {
       width: 58%;
    }
 
-   .foo-ter .et span {
-      color: black;
-      font-size: 30px;
-   }
+       .foo-ter .et span {
+        color: black;
+        font-size: 1.5rem;
+    }
 
    .cc-cart .small-box .items .hed-er .left {
       font-size: 30px;

@@ -64,7 +64,8 @@ html {
 }
 
 .container .heading h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+      font-family: "Poppins", sans-serif;
 }
 
 .container .heading .two {
@@ -72,14 +73,16 @@ html {
 }
 
 .container .heading .two .h1 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0 10px;
     border-right: 1px solid;
+      font-family: "Poppins", sans-serif;
 }
 
 .container .heading .two .h2 {
     padding: 0 10px;
-    font-size: 1.3rem;
+    font-size: 1rem;
+      font-family: "Poppins", sans-serif;
 }
 
 
@@ -131,6 +134,7 @@ html {
     height: 5vh;
     width: 100px;
     border: none;
+    font-size: 1rem;
 }
 
 .container .blog .l .img .des .j {
@@ -140,10 +144,12 @@ html {
 .container .blog .l .img .des .j .three {
     padding: 0 10px;
     border-right: 1px solid;
+      font-family: "Poppins", sans-serif;
 }
 
 .container .blog .l .img .des .j .three3 {
     padding: 0 10px;
+      font-family: "Poppins", sans-serif;
 
 }
 
@@ -161,15 +167,17 @@ html {
 
 .container .blog .l .lists .description h1 {
     font-size: 3rem;
+      font-family: "Poppins", sans-serif;
 }
 
 .container .blog .l .lists .description a {
     padding: 5px 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: fit-content;
     text-decoration: none;
     color: black;
     border-bottom: 2px rgb(255, 132, 0) solid;
+      font-family: "Poppins", sans-serif;
 }
 
 
@@ -193,8 +201,13 @@ html {
     height: 6vh;
     width: 100%;
     padding: 0 20px;
+    border: 2px solid gray;
 }
 
+.container .blog .r .input input:focus{
+   border: orange solid 3px;
+    outline: none;
+}
 .container .blog .r .input i {
     position: absolute;
     right: 10px;
@@ -215,6 +228,7 @@ html {
 
 .container .blog .r .head h3 {
     font-size: 1.5rem;
+      font-family: "Poppins", sans-serif;
 }
 
 .container .blog .r .bullet {
@@ -307,6 +321,7 @@ html {
 
 .container .blog .Categories .f .five h5 {
     font-size: 1.2rem;
+      font-family: "Poppins", sans-serif;
 }
 
 
@@ -319,6 +334,11 @@ html {
 .container .blog .newsletter input {
     height: 6vh;
     padding: 0 20px;
+     border: 2px solid gray;
+}
+.container .blog .newsletter input:focus{
+    border: orange solid 3px;
+    outline: none;
 }
 
 .container .blog .newsletter button {
@@ -345,6 +365,20 @@ html {
     font-size: 20px;
 }
 
+
+@media screen and (min-width:601px) and (max-width:770px){
+
+.container .blog {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+    
+}
 
 
 
@@ -473,6 +507,20 @@ html {
     .footer-for-category {
         margin-top: 100px;
     }
+
+    .container .blog .popular .posts .list .right h4 {
+    color: black;
+    font-size: 1rem;
+}
+
+.container .blog .Categories .f .five h5 {
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+}
+.container .blog .l .lists .description h1 {
+    font-size: 1.7rem;
+    font-family: "Poppins", sans-serif;
+}
 
 
 

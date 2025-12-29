@@ -23,39 +23,40 @@
 
 }
 
-.ccheckout{
-  
-}
-.checkout{
+.ccheckout {}
+
+.checkout {
     /* border: black solid; */
     padding: 30px 0;
 }
 
-.checkout .heading{
+.checkout .heading {
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
 }
-.checkout .heading .two{
+
+.checkout .heading .two {
     display: flex;
 }
 
-.checkout .heading h1{
+.checkout .heading h1 {
     font-size: 3rem;
-      font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.checkout .heading .two .h1{
+.checkout .heading .two .h1 {
     padding: 0 10px;
     border-right: 1px solid;
     font-size: 1.2rem;
     height: fit-content;
-      font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-.checkout .heading .two .h2{
-      padding: 0 10px;
+
+.checkout .heading .two .h2 {
+    padding: 0 10px;
     font-size: 1.2rem;
-      font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -63,29 +64,31 @@
 /*-------------details------------------*/
 
 
-.checkout .billing{
+.checkout .billing {
     display: flex;
-   
+
     justify-content: space-between;
 }
-.checkout .billing .details{
- 
-   
+
+.checkout .billing .details {
+
+
     flex: 0 0 67%;
 }
-.checkout .billing .yr-order{
-  
+
+.checkout .billing .yr-order {
+
     flex: 0 0 30%;
 }
 
-.checkout .billing .details .coupon{
+.checkout .billing .details .coupon {
     background-color: rgb(234, 234, 234);
-   padding: 20px;
-   border-top: 2px solid;
-     font-family: "Poppins", sans-serif;
+    padding: 20px;
+    border-top: 2px solid;
+    font-family: "Poppins", sans-serif;
 }
 
-.checkout .billing .details .form{
+.checkout .billing .details .form {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -95,55 +98,59 @@
     padding: 20px 0;
     border-bottom: 2px solid gray;
 }
-.checkout .billing .details .form .bill h3{
+
+.checkout .billing .details .form .bill h3 {
     font-size: 1.5rem;
-      font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-.checkout .billing .details .form .ten{ 
+
+.checkout .billing .details .form .ten {
     display: flex;
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
 }
 
-.checkout .billing .details .form .ten label{
+.checkout .billing .details .form .ten label {
     font-size: 1rem;
-      font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.checkout .billing .details .form .ten label span{
+.checkout .billing .details .form .ten label span {
     color: red;
 }
-.checkout .billing .details .form .ten input{
+
+.checkout .billing .details .form .ten input {
     height: 7vh;
     border: none;
     outline: 1.5px rgb(189, 188, 188) solid;
     padding: 0 20px;
 }
 
-.checkout .billing .details .form .sep{
-  
+.checkout .billing .details .form .sep {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.checkout .billing .details .form .sep .two{
-      width: 48%;
+
+.checkout .billing .details .form .sep .two {
+    width: 48%;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.checkout .billing .details .form  .ch-box{
+.checkout .billing .details .form .ch-box {
     display: flex;
     align-items: center;
     flex-direction: row;
-      font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.checkout .billing .details .form  .ch-box input{
+.checkout .billing .details .form .ch-box input {
     outline: none;
     width: 20px;
-   
+
 }
 
 
@@ -152,92 +159,120 @@
 
 
 
-.checkout .billing  .yr-order{
+.checkout .billing .yr-order {
     display: flex;
     flex-direction: column;
     gap: 20px;
-     padding: 20px;
-     height: fit-content;
-     background-color: #fdf3ea;
+    padding: 20px;
+    height: fit-content;
+    background-color: #fdf3ea;
 }
 
-.checkout .billing  .yr-order .y-o{
+.checkout .billing .yr-order .y-o {
     font-size: 1.4rem;
     padding: 20px 0;
     border-bottom: 2px solid gray;
-      font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-.checkout .billing  .yr-order .produc-t{
+
+.checkout .billing .yr-order .produc-t {
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.checkout .billing  .yr-order .produc-t .five{
+.checkout .billing .yr-order .produc-t .five {
     display: flex;
     justify-content: space-between;
 }
 
-.checkout .billing  .yr-order .produc-t .five h5{
+.checkout .billing .yr-order .produc-t .five h5 {
     font-size: 1rem;
     font-weight: 400;
-      font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.checkout .billing  .yr-order .sub-total{
-   border-top: 2px solid gray;
-   border-bottom: 2px solid gray;
+.checkout .billing .yr-order .sub-total {
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
 }
 
-.checkout .billing  .yr-order .ch-box {
+.checkout .billing .yr-order .ch-box {
     display: flex;
     align-items: center;
     gap: 15px;
-      font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.checkout .billing  .yr-order .ch-box input{
+.checkout .billing .yr-order .ch-box input {
     width: 20px;
     height: 30px;
-}  
+}
 
-.checkout .billing  .yr-order  button{
+.checkout .billing .yr-order button {
     height: 6vh;
     color: white;
     border: none;
     background-color: var(--button-color);
     cursor: pointer;
-      font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:600px) {
 
+
+    .checkout .heading h1 {
+        font-size: 2rem;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .checkout .heading .two {
+        display: flex;
+        align-items: center;
+    }
+
+    .checkout .heading .two .h1 {
+        padding: 0 10px;
+        border-right: 1px solid;
+        font-size: 1rem;
+        height: fit-content;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .checkout .heading .two .h2 {
+        padding: 0 10px;
+        font-size: 1rem;
+        font-family: "Poppins", sans-serif;
+    }
 
     .checkout .billing {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: space-between;
-}
-.checkout .billing .details {
-    flex: 0 0 67%;
-    padding: 10px;
-}
-.checkout .billing .details .form .sep {
-    display: flex;
-   flex-direction: column;
-    justify-content: space-between;
-}
-.checkout .billing .details .form .sep .two {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .checkout .billing .details {
+        flex: 0 0 67%;
+        padding: 10px;
+    }
+
+    .checkout .billing .details .form .sep {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .checkout .billing .details .form .sep .two {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
 
 

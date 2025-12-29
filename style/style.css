@@ -977,6 +977,10 @@ nav ul li a:hover {
     justify-content: space-between;
 }
 
+.container2 .range .three .name span{
+    font-family: var(--poppins-Text);
+}
+
 .container2 .range .three .lv {
 
     background-color: rgb(211, 211, 211);
@@ -1323,16 +1327,17 @@ nav ul li a:hover {
 }
 
 .container3 .second .types .add {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     position: absolute;
     bottom: -30%;
     border-bottom: 1px var(--orange-color) solid;
-    font-size: 20px;
+    font-size: 1.1rem;
     padding: 10px;
     font-weight: 600;
     transform: scale(0.3);
     transition: 0.3s linear;
     opacity: 0;
+    font-family: var(--poppins-Text);
 }
 
 
@@ -1907,7 +1912,8 @@ nav ul li a:hover {
     font-size: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    color: rgb(255, 111, 0);
+    color: rgb(255, 85, 0);
+      /* color: rgb(255, 191, 0); */
     animation: hours linear;
     animation-timeline: view();
     animation-range: entry 10% cover 50vh;
@@ -1932,11 +1938,13 @@ nav ul li a:hover {
 }
 
 .footer .days h3 {
-    font-size: 16px;
+    font-size: .9rem;
+    font-weight: 400;
     color: rgb(255, 255, 255);
     animation: days linear;
     animation-timeline: view();
     animation-range: entry 30% cover 10vh;
+    font-family: var(--poppins-Text);
 }
 
 @keyframes days {
@@ -1975,9 +1983,10 @@ nav ul li a:hover {
 
 
 .footer .two p {
-    font-size: 16px;
+    font-size: .9rem;
     text-align: center;
     color: rgb(255, 255, 255);
+     font-family: var(--poppins-Text);
 }
 
 .footer .bottom1 .icons {
@@ -2022,13 +2031,15 @@ nav ul li a:hover {
 }
 
 .footer .three .g p {
-    font-size: 16px;
+    font-size: .9rem;
     animation: three linear;
     animation-timeline: view();
     animation-range: entry 30% cover 10vh;
-    font-size: 18px;
+   
     text-align: start;
     color: white;
+     font-family: var(--poppins-Text);
+     font-weight: 400;
 }
 
 .footer .three .ser {
@@ -2097,6 +2108,8 @@ footer .end {
 
 footer .end .l {
     color: white;
+    font-family: var(--poppins-Text);
+      font-size: .8rem;
 }
 
 footer .end .l span {
@@ -2111,6 +2124,8 @@ footer .end .r .b {
     color: gray;
     padding: 0 10px;
     border-right: 1px solid;
+      font-family: var(--poppins-Text);
+      font-size: .8rem;
 }
 
 footer .end .r .b3 {
@@ -3429,11 +3444,11 @@ footer .end .r .b3 {
     }
 
     .container3 .second .types .add {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0);
         position: absolute;
         bottom: -30%;
         border-bottom: 1px var(--orange-color) solid;
-        font-size: 20px;
+        font-size: 1rem;
         padding: 7px;
         font-weight: 600;
         transform: scale(0.3);

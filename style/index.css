@@ -397,10 +397,10 @@ button {
 
     .login {
         position: absolute;
-
         background-position: center;
         background-size: cover;
         right: 0;
+        bottom: 10%;
         height: 100%;
         width: 100%;
         background: none;
@@ -477,7 +477,7 @@ button {
     .toggle {
         position: absolute;
         left: 0;
-        top: 42px;
+        top: 71px;
         height: fit-content;
         width: 100%;
         display: flex;
@@ -503,7 +503,7 @@ button {
     .btn1 {
         border: rgb(255, 254, 254) solid;
         width: 38%;
-        height: 7vh;
+        height: 5vh;
         border-radius: 10px;
         position: relative;
     }
@@ -549,7 +549,8 @@ button {
 
     .container1.active .Registration {
         left: 0;
-        transition: 3s ease-in;
+        top: 6%;
+        transition: 1s ease-in;
         visibility: visible;
         padding: 40px 0;
     }
